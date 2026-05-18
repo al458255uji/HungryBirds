@@ -5,6 +5,8 @@ public class SpawnOruga : MonoBehaviour
 {
     public GameObject prefabOruga;
     public float tiempoDeEspera = 2.0f; // Tiempo que tarda en salir la siguiente tras morir la anterior
+    [Header("Sonidos de Alerta")]
+    public AudioSource sonidoAparicion;
 
     void Start()
     {
@@ -15,11 +17,8 @@ public class SpawnOruga : MonoBehaviour
     {
         while (true)
         {
-            // Regla de oro: Solo si hay 0 orugas en el mapa
             if (OrugaAI.cantidadVivas == 0)
             {
-                // Un pequeño margen aleatorio para que no siempre salga del mismo sitio
-                // si hay varios spawners esperando
                 yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
 
                 // Volvemos a comprobar por si otro spawner se adelantó en ese segundo
@@ -27,6 +26,11 @@ public class SpawnOruga : MonoBehaviour
                 {
                     Instantiate(prefabOruga, transform.position, Quaternion.identity);
                     Debug.Log("Nueva oruga en camino desde: " + gameObject.name);
+
+                    if (sonidoAparicion != null)
+                    {
+                        sonidoAparicion.Play();
+                    }
                 }
             }
 

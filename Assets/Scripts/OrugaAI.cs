@@ -42,28 +42,21 @@ public class OrugaAI : MonoBehaviour
     {
         if (player == null || rb == null) return;
 
-        // 1. Calculamos la distancia en cada eje
         float diffX = player.position.x - transform.position.x;
         float diffY = player.position.y - transform.position.y;
 
         Vector2 velocidadNueva = Vector2.zero;
 
-        // 2. LÓGICA DE RECTAS (Prioriza el eje con mayor distancia)
         if (Mathf.Abs(diffX) > Mathf.Abs(diffY))
         {
-            // Movimiento puro Horizontal
             velocidadNueva = new Vector2(Mathf.Sign(diffX) * speed, 0);
         }
         else
         {
-            // Movimiento puro Vertical
             velocidadNueva = new Vector2(0, Mathf.Sign(diffY) * speed);
         }
-
-        // 3. APLICAR VELOCIDAD DIRECTA (Cero resbalón)
         rb.linearVelocity = velocidadNueva;
 
-        // 4. Orientación del sprite
         if (velocidadNueva.x != 0)
         {
             transform.localScale = new Vector3(velocidadNueva.x > 0 ? 2f : -2f, 2f, 1f);

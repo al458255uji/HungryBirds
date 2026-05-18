@@ -1,23 +1,22 @@
 using UnityEngine;
-using UnityEngine.AI; //Necesario para usar NavMeshAgent
+using UnityEngine.AI; 
 
 public class OrugaIQ : MonoBehaviour
 {
     private NavMeshAgent agent;
     public Transform targetPlant;
     public int vida = 2;
+  
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
 
-        // Esto es para que la oruga no se "tumbe" en 2D
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
         if (targetPlant != null)
         {
-            // La oruga calcula sola el camino evitando obstáculos
             agent.SetDestination(targetPlant.position);
         }
     }

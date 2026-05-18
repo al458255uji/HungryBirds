@@ -4,12 +4,19 @@ public class MenuVictoria : MonoBehaviour
 {
     public void SalirDelJuego()
     {
-        Debug.Log("¡Botón Exit pulsado! Cerrando el juego...");
+        StartCoroutine(WaitAndExit());
+    }
 
-        Application.Quit();
+    private System.Collections.IEnumerator WaitAndExit()
+    {
+        yield return new WaitForSecondsRealtime(0.15f);
 
         #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
+            // Si estás en el editor de Unity, detiene el Play
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+       
+        Application.Quit();
         #endif
     }
 }

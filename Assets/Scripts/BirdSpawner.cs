@@ -7,6 +7,17 @@ public class BirdSpawner : MonoBehaviour
     public GameObject birdPrefab;
     public float minX = -12f, maxX = 12f, minY = -7f, maxY = 7f;
 
+    [Header("Configuración de Tiempos")]
+    [Tooltip("Tiempo de espera para la PRIMERA urraca al iniciar el nivel")]
+    public float esperaInicial = 3f;
+    [Tooltip("Intervalo de tiempo mínimo entre urracas")]
+    public float tiempoMinEntreAves = 5f;
+    [Tooltip("Intervalo de tiempo máximo entre urracas")]
+    public float tiempoMaxEntreAves = 7f;
+
+    [Header("Sonidos de Alerta (Nivel 2)")]
+    public AudioSource sonidoAparicionUrraca;
+
     private GameObject[] allPlants;
     private int lastSide = -1;
 
@@ -17,34 +28,38 @@ public class BirdSpawner : MonoBehaviour
         if (allPlants.Length == 0)
         {
             Debug.LogError("¡Ojo! No se ha encontrado ninguna planta con el Tag 'Plant'.");
+            return;
         }
 
-        // Al empezar el nivel, llamamos a la función para que espere entre 3 y 5 segundos
-        IniciarCuentaAtrasSiguienteUrraca();
+        StartCoroutine(RutinaSpawneoContinuo());
     }
 
-    public void IniciarCuentaAtrasSiguienteUrraca()
+    IEnumerator RutinaSpawneoContinuo()
     {
-        StartCoroutine(RutinaEsperaSiguienteUrraca());
+        yield return new WaitForSeconds(esperaInicial);
+
+        while (true) 
+        {
+            int cantidadAves = Random.Range(1, 3);
+            List<int> ladosUsadosEnEstaOleada = new List<int>();
+
+            for (int i = 0; i < cantidadAves; i++)
+            {
+                SpawnBird(ladosUsadosEnEstaOleada);
+            }
+            float tiempoAleatorio = Random.Range(tiempoMinEntreAves, tiempoMaxEntreAves);
+            yield return new WaitForSeconds(tiempoAleatorio);
+        }
     }
 
-    IEnumerator RutinaEsperaSiguienteUrraca()
-    {
-        // Calculamos el tiempo aleatorio
-        float tiempoAleatorio = Random.Range(2f, 4f);
-        Debug.Log("Siguiente urraca en camino. Tiempo de respiro: " + tiempoAleatorio + " segundos.");
-
-        yield return new WaitForSeconds(tiempoAleatorio);
-
-        SpawnBird();
-    }
-
-    void SpawnBird()
+    void SpawnBird(List<int> ladosUsadosEnEstaOleada)
     {
         if (allPlants == null || allPlants.Length == 0) return;
 
         int side;
-        do { side = Random.Range(0, 4); } while (side == lastSide);
+        int intentos = 0;
+        do { side = Random.Range(0, 4); intentos++; } while ((side == lastSide || ladosUsadosEnEstaOleada.Contains(side)) && intentos < 10);
+        ladosUsadosEnEstaOleada.Add(side);
         lastSide = side;
 
         float px = 0, py = 0;
@@ -62,6 +77,11 @@ public class BirdSpawner : MonoBehaviour
         if (target == null) return;
 
         GameObject newBird = Instantiate(birdPrefab, new Vector3(px, py, 0), Quaternion.identity);
+
+        if (sonidoAparicionUrraca != null)
+        {
+            sonidoAparicionUrraca.Play();
+        }
 
         UrracaAI ai = newBird.GetComponent<UrracaAI>();
         if (ai != null)

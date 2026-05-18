@@ -88,7 +88,7 @@ public class UrracaAI : MonoBehaviour
 
         if (spawnerAsignado != null)
         {
-            spawnerAsignado.IniciarCuentaAtrasSiguienteUrraca();
+            //spawnerAsignado.IniciarCuentaAtrasSiguienteUrraca();
         }
 
         Destroy(gameObject);
