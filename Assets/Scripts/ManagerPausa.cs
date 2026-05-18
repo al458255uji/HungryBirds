@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class ManagerPausa : MonoBehaviour
 {
@@ -7,9 +8,20 @@ public class ManagerPausa : MonoBehaviour
     public GameObject objetoMenuPausa;
 
     [Header("Configuración de Audio")]
-    public AudioSource musicaFondo; // <--- ESTA ES LA CASILLA QUE FALTA
+    public AudioSource musicaFondo; 
 
     private bool juegoPausado = false;
+    private PlayerControls controls;
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Player.Pause.performed += ctx => AlternarPausa();
+    }
+
+    private void OnEnable() => controls.Enable();
+    private void OnDisable() => controls.Disable();
 
     void Start()
     {
@@ -18,15 +30,12 @@ public class ManagerPausa : MonoBehaviour
         juegoPausado = false;
     }
 
-    void Update()
+    private void AlternarPausa()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (juegoPausado)
-                Continuar();
-            else
-                Pausar();
-        }
+        if (juegoPausado)
+            Continuar();
+        else
+            Pausar();
     }
 
     public void Continuar()
