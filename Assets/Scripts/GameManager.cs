@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     {
         timer = dayDuration;
         dayEnded = false;
+        Time.timeScale = 1f;
     }
 
     void Update()
