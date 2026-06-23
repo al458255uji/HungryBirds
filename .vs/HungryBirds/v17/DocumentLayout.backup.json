@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuiGameOver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Menu\\MenuiGameOver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Menu\\MenuVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ControlOpciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ControlOpciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuiGameOver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Menu\\MenuiGameOver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Menu\\MenuVictoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,47 +117,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ControladorDeNivel.cs",
-              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ControladorDeNivel.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ControladorDeNivel.cs",
-              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ControladorDeNivel.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ControladorDeNivel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:03:50.071Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ManagerPausa.cs",
-              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ManagerPausa.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ManagerPausa.cs",
-              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ManagerPausa.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ManagerPausa.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAIBJwEgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T15:40:46.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrugaIQ.cs",
-              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\OrugaIQ.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\OrugaIQ.cs",
-              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\OrugaIQ.cs",
-              "RelativeToolTip": "Assets\\Scripts\\OrugaIQ.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T14:54:15.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "OrugaAI.cs",
               "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\OrugaAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OrugaAI.cs",
@@ -165,37 +129,36 @@
               "RelativeToolTip": "Assets\\Scripts\\OrugaAI.cs",
               "ViewState": "AgIAABgAAAAAAAAAAIBJwCUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T13:47:52.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T13:47:52.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "MenuiGameOver.cs",
               "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuiGameOver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\MenuiGameOver.cs",
               "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuiGameOver.cs",
               "RelativeToolTip": "Assets\\Scripts\\Menu\\MenuiGameOver.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:00:26.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T20:50:43.323Z",
+              "WhenOpened": "2026-05-17T22:00:26.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwDgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T20:50:43.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BirdSpawner.cs",
               "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\BirdSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BirdSpawner.cs",
@@ -231,7 +194,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "MenuVictoria.cs",
+              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuVictoria.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\MenuVictoria.cs",
+              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuVictoria.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu\\MenuVictoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T20:00:04.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrugaIQ.cs",
+              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\OrugaIQ.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OrugaIQ.cs",
+              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\OrugaIQ.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OrugaIQ.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T14:54:15.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerPausa.cs",
+              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ManagerPausa.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ManagerPausa.cs",
+              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ManagerPausa.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ManagerPausa.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAIBJwEgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T15:40:46.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ControladorDeNivel.cs",
+              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ControladorDeNivel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ControladorDeNivel.cs",
+              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ControladorDeNivel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ControladorDeNivel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:03:50.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ControlOpciones.cs",
               "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\ControlOpciones.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ControlOpciones.cs",
@@ -252,18 +263,6 @@
               "ViewState": "AgIAAEgAAAAAAAAAAIBJwGEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-10T18:47:39.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MenuVictoria.cs",
-              "DocumentMoniker": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuVictoria.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\MenuVictoria.cs",
-              "ToolTip": "C:\\Users\\Victoria\\Documents\\GitHub\\HungryBirds\\Assets\\Scripts\\Menu\\MenuVictoria.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Menu\\MenuVictoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T20:00:04.821Z"
             },
             {
               "$type": "Document",
